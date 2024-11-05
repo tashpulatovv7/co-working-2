@@ -1,5 +1,227 @@
+.source-serif-4-uniquifier > {
+	font-family: 'Source Serif 4', serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+.oswald-uniquifier {
+	font-family: 'Oswald', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Serif 4', serif;
+}
+
+.header {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 46px 150px;
+}
+
+.logo {
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	color: var(--text-color);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+.nav a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--text-color);
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.nav a:hover {
+	color: var(--primary-color);
+	transform: scale(1.1);
+	transition: all 1s ease;
+}
+
+.episodes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.donate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.donate a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(234, 234, 238, 1);
+}
+
+.menu {
+	display: none;
+}
+
+.menu img {
+	width: 30px;
+	height: 30px;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.line {
+	width: 100vw;
+	height: 0px;
+	border: 1px;
+	rotate: -180 deg;
+	border: 1px solid #eaeaee;
+}
+
+.music-view {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.music-photo {
+	width: 180px;
+	height: 180px;
+	margin-top: 96px;
+}
+
+.music-view h2 {
+	font-size: 26px;
+	font-weight: 600;
+	color: #222222;
+	margin-top: 39px;
+}
+
+.music-player {
+	width: 669.25px;
+	height: 16px;
+	margin-top: 39px;
+}
+
+.mobile-player {
+	display: none;
+}
+
+.music-view p {
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 39px;
+}
+
+.brands {
+	display: flex;
+	gap: 30px;
+	margin-top: 12px;
+}
+
+.text-section {
+	margin-left: 385px;
+}
+
+.new-text p {
+	font-size: 10px;
+	font-weight: 600;
+	color: #7247ca;
+	padding: 6px 8px 6px 8px;
+	background-color: #f5f5f7;
+	width: 39px;
+	height: 23px;
+	border-radius: 3px;
+}
+
+.new-text h3 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #979797;
+}
+
+.new-text {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 96px;
+}
+
+.experience-23 h2 {
+	margin-top: 14px;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.listen-now {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+@media (max-width: 600px) {
+	.menu {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.music-photo {
+		margin-top: 48px;
+	}
+
+	.music-view h2 {
+		width: 288px;
+		height: 64px;
+		text-align: center;
+	}
+
+	.mobile-player {
+		display: block;
+		margin-top: 39px;
+	}
+
+	.music-player {
+		display: none;
+	}
 }
